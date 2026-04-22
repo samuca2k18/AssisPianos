@@ -212,7 +212,7 @@ function App() {
               Venda • Restauração • Conserto • Afinação • Transporte
             </p>
             <h1 className="max-w-[15ch] text-4xl leading-[1.02] tracking-tight text-[var(--deep)] md:text-6xl">
-              Especialistas em pianos em Fortaleza.
+              Especialistas em Pianos em Fortaleza.
             </h1>
             <p className="mt-5 max-w-[56ch] text-base text-[var(--muted)] md:text-lg">
               Atendimento técnico para venda, restauração, afinação e transporte com cuidado profissional e suporte
@@ -230,7 +230,7 @@ function App() {
                 Falar no Instagram
               </a>
               <a
-                href="https://wa.me/558530671283"
+                href="https://wa.me/5585996224425"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
@@ -467,12 +467,12 @@ function App() {
                 </p>
 
                 <div className="mt-6 grid gap-2 text-sm">
-                  <a href="tel:+558530671283" className="inline-flex items-center gap-2 text-[var(--deep)] hover:underline">
+                  <a href="tel:+5585996224425" className="inline-flex items-center gap-2 text-[var(--deep)] hover:underline">
                     <PhoneCall size={15} />
-                    (85) 3067-1283
+                    (85) 9 9622-4425
                   </a>
-                  <a href="mailto:assispianos@gmail.com" className="text-[var(--deep)] hover:underline">
-                    assispianos@gmail.com
+                  <a href="mailto:otpianos@yahoo.com.br" className="text-[var(--deep)] hover:underline">
+                    otpianos@yahoo.com.br
                   </a>
                   <a
                     href="https://www.instagram.com/assispianos/"
@@ -504,7 +504,7 @@ function App() {
                 </div>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <a
-                    href="https://wa.me/558530671283"
+                    href="https://wa.me/5585996224425"
                     target="_blank"
                     rel="noreferrer"
                   className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900"
