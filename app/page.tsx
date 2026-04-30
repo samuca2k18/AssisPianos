@@ -12,7 +12,7 @@ import { FloatingWhatsApp } from "@/components/sections/FloatingWhatsApp";
 
 export default function HomePage() {
   return (
-    <div className="relative min-h-screen bg-brand-ebony">
+    <div className="relative min-h-screen bg-brand-cream text-brand-wood">
       <Header />
       <main>
         <HeroSection />

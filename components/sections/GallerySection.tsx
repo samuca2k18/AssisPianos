@@ -21,7 +21,7 @@ export function GallerySection() {
         <div className="mt-16 grid gap-7 md:grid-cols-2">
           {galleryItems.map((item, index) => (
             <Reveal key={item.title} delay={index * 0.12}>
-              <article className="group overflow-hidden rounded-[2rem] border border-brand-parchment/[0.08] bg-brand-charcoal/50 shadow-premium transition-all duration-600 hover:border-brand-champagne/20 hover:shadow-[0_30px_80px_rgba(0,0,0,0.4),0_0_50px_rgba(200,169,110,0.08)]">
+              <article className="group overflow-hidden rounded-[2rem] border border-brand-parchment bg-white shadow-soft transition-all duration-600 hover:border-brand-champagne/40 hover:shadow-premium">
                 <div className="relative h-[440px] overflow-hidden sm:h-[480px]">
                   {item.type === "video" ? (
                     <video
@@ -44,19 +44,19 @@ export function GallerySection() {
                     />
                   )}
 
-                  {/* Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/95" />
+                  {/* Gradient Overlay for light theme (dark at bottom for text contrast) */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/90" />
 
                   {/* Category Badge */}
-                  <div className="absolute left-6 top-6 rounded-full border border-brand-champagne/30 bg-black/40 px-5 py-2 text-[10px] font-semibold uppercase tracking-[0.22em] text-brand-champagne backdrop-blur-md transition-all duration-400 group-hover:border-brand-champagne/50 group-hover:bg-black/50">
+                  <div className="absolute left-6 top-6 rounded-full border border-white/30 bg-black/40 px-5 py-2 text-[10px] font-semibold uppercase tracking-[0.22em] text-white backdrop-blur-md transition-all duration-400 group-hover:border-brand-champagne/60 group-hover:bg-brand-dark/60 group-hover:text-brand-champagne">
                     {item.label}
                   </div>
 
                   {/* Info Card */}
-                  <div className="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/[0.08] bg-black/35 p-6 backdrop-blur-xl transition-all duration-500 group-hover:border-brand-champagne/15 group-hover:bg-black/45">
-                    <div className="mb-3 h-px w-10 bg-gradient-to-r from-brand-champagne/50 to-transparent transition-all duration-500 group-hover:w-16" />
-                    <h3 className="font-display text-xl text-brand-parchment sm:text-2xl">{item.title}</h3>
-                    <p className="mt-2.5 text-[14px] leading-relaxed text-brand-parchment/55">{item.description}</p>
+                  <div className="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/20 bg-black/40 p-6 backdrop-blur-xl transition-all duration-500 group-hover:border-brand-champagne/40 group-hover:bg-black/60">
+                    <div className="mb-3 h-px w-10 bg-gradient-to-r from-brand-champagne to-transparent transition-all duration-500 group-hover:w-16" />
+                    <h3 className="font-display text-xl text-white sm:text-2xl">{item.title}</h3>
+                    <p className="mt-2.5 text-[14px] leading-relaxed text-white/80">{item.description}</p>
                   </div>
                 </div>
               </article>

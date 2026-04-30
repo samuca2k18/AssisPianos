@@ -6,7 +6,7 @@ import { Container } from "@/components/ui/Container";
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-brand-champagne/10 bg-brand-ebony pt-20 pb-10">
+    <footer className="relative border-t border-brand-champagne/10 bg-brand-dark pt-20 pb-10">
       {/* Decorative top glow */}
       <div className="pointer-events-none absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-brand-champagne/25 to-transparent" />
 

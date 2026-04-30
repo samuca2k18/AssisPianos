@@ -6,36 +6,35 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          ebony: "#0A0908",
-          charcoal: "#1A1714",
-          walnut: "#4A3728",
-          parchment: "#F5F0E8",
-          champagne: "#C8A96E",
-          gold: "#D4AF37",
-          cream: "#FAF8F4",
-          muted: "#8B7E6A",
+          cream: "#FDFBF7", // Principal off-white background
+          light: "#F5EFE6", // Secondary beige background
+          wood: "#3E2723", // Dark brown for text
+          dark: "#1E1A18", // Almost black for headings/contrast
+          parchment: "#EBE3D5", // Border or subtle element color
+          champagne: "#C8A96E", // Accent
+          gold: "#D4AF37", // Strong Accent
         },
       },
       boxShadow: {
-        soft: "0 12px 40px rgba(0, 0, 0, 0.15)",
-        premium: "0 20px 60px rgba(0, 0, 0, 0.25)",
-        glow: "0 0 30px rgba(200, 169, 110, 0.15)",
-        "glow-strong": "0 0 50px rgba(200, 169, 110, 0.25)",
-        "card-hover": "0 25px 50px rgba(0, 0, 0, 0.3), 0 0 30px rgba(200, 169, 110, 0.08)",
+        soft: "0 10px 30px rgba(62, 39, 35, 0.04)",
+        premium: "0 15px 40px rgba(62, 39, 35, 0.08)",
+        glow: "0 8px 30px rgba(200, 169, 110, 0.15)",
+        "glow-strong": "0 12px 40px rgba(200, 169, 110, 0.25)",
+        "card-hover": "0 20px 40px rgba(62, 39, 35, 0.08), 0 0 20px rgba(200, 169, 110, 0.1)",
       },
       fontFamily: {
         display: ["var(--font-display)"],
         body: ["var(--font-body)"],
       },
       backgroundImage: {
-        "premium-gradient":
-          "linear-gradient(160deg, #0A0908 0%, #151210 40%, #1A1714 70%, #0F0D0B 100%)",
+        "light-gradient":
+          "linear-gradient(160deg, #FDFBF7 0%, #F5EFE6 100%)",
         "gold-gradient":
           "linear-gradient(135deg, #C8A96E 0%, #D4AF37 50%, #E8C963 100%)",
         "card-gradient":
-          "linear-gradient(145deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%)",
+          "linear-gradient(145deg, #FFFFFF 0%, #FDFBF7 100%)",
         "section-divider":
-          "linear-gradient(90deg, transparent, rgba(200,169,110,0.3), transparent)",
+          "linear-gradient(90deg, transparent, rgba(200,169,110,0.4), transparent)",
       },
       keyframes: {
         shimmer: {
@@ -47,7 +46,7 @@ const config: Config = {
           "50%": { transform: "translateY(-12px)" },
         },
         "pulse-ring": {
-          "0%": { transform: "scale(1)", opacity: "0.5" },
+          "0%": { transform: "scale(1)", opacity: "0.3" },
           "80%, 100%": { transform: "scale(1.6)", opacity: "0" },
         },
         "fade-in-up": {

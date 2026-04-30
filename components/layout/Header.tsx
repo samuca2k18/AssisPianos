@@ -19,9 +19,9 @@ export function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         scrolled
-          ? "border-b border-brand-champagne/15 bg-brand-ebony/95 shadow-[0_4px_30px_rgba(0,0,0,0.4)] backdrop-blur-xl"
+          ? "border-b border-brand-champagne/20 bg-white/90 shadow-[0_4px_30px_rgba(62,39,35,0.08)] backdrop-blur-xl"
           : "border-b border-transparent bg-transparent backdrop-blur-sm"
       }`}
     >
@@ -31,17 +31,16 @@ export function Header() {
             <Image
               src="/images/assis-logo.jpg"
               alt="Logo Assis Pianos"
-              width={44}
-              height={44}
-              className="rounded-full border-2 border-brand-champagne/40 object-cover transition-all duration-300 group-hover:border-brand-champagne/70 group-hover:shadow-glow"
+              width={48}
+              height={48}
+              className="rounded-full border-2 border-brand-champagne/40 object-cover transition-all duration-300 group-hover:border-brand-champagne group-hover:shadow-[0_0_15px_rgba(200,169,110,0.3)]"
             />
-            <div className="absolute -inset-0.5 rounded-full bg-brand-champagne/20 opacity-0 blur-sm transition-opacity duration-300 group-hover:opacity-100" />
           </div>
           <span className="leading-tight">
-            <strong className="block font-display text-xl tracking-wide text-brand-parchment">
+            <strong className={`block font-display text-xl tracking-wide transition-colors duration-500 ${scrolled ? 'text-brand-dark' : 'text-brand-parchment'}`}>
               {businessInfo.name}
             </strong>
-            <small className="text-[10px] uppercase tracking-[0.25em] text-brand-champagne/70">
+            <small className={`text-[10px] uppercase tracking-[0.25em] transition-colors duration-500 ${scrolled ? 'text-brand-wood/70' : 'text-brand-parchment/70'}`}>
               {businessInfo.city}
             </small>
           </span>
@@ -52,7 +51,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="nav-link text-[13px] font-medium text-brand-parchment/75 transition-colors duration-300 hover:text-brand-champagne"
+              className={`nav-link text-[13px] font-medium transition-colors duration-500 hover:text-brand-champagne ${scrolled ? 'text-brand-wood/80' : 'text-brand-parchment/80'}`}
             >
               {item.label}
             </Link>
@@ -64,16 +63,16 @@ export function Header() {
             href={businessInfo.whatsappUrl}
             target="_blank"
             rel="noreferrer"
-            className="btn-shimmer hidden items-center gap-2 rounded-full bg-brand-champagne px-5 py-2.5 text-sm font-semibold text-brand-ebony transition-all duration-300 hover:shadow-glow sm:inline-flex"
+            className="btn-shimmer hidden items-center gap-2 rounded-full bg-brand-champagne px-6 py-2.5 text-sm font-semibold text-white shadow-soft transition-all duration-300 hover:shadow-premium hover:brightness-105 sm:inline-flex"
           >
-            <MessageCircle size={15} />
+            <MessageCircle size={16} />
             Orçamento
           </Link>
 
           <button
             type="button"
             onClick={() => setIsOpen((prev) => !prev)}
-            className="inline-flex rounded-full border border-brand-champagne/25 bg-white/5 p-2.5 text-brand-parchment transition-colors hover:border-brand-champagne/50 hover:bg-white/10 lg:hidden"
+            className={`inline-flex rounded-full border p-2.5 transition-colors lg:hidden ${scrolled ? 'border-brand-champagne/30 text-brand-wood hover:bg-brand-light' : 'border-white/20 text-white hover:bg-white/10'}`}
             aria-expanded={isOpen}
             aria-label="Alternar menu"
           >
@@ -83,14 +82,14 @@ export function Header() {
       </Container>
 
       {isOpen ? (
-        <div className="border-t border-brand-champagne/15 bg-brand-ebony/98 backdrop-blur-xl lg:hidden">
+        <div className="border-t border-brand-champagne/20 bg-white/95 backdrop-blur-xl lg:hidden">
           <Container className="grid gap-1 py-4">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="rounded-xl px-4 py-2.5 text-sm font-medium text-brand-parchment/80 transition-all hover:bg-brand-champagne/8 hover:text-brand-champagne"
+                className="rounded-xl px-4 py-3 text-sm font-medium text-brand-wood/80 transition-all hover:bg-brand-light hover:text-brand-champagne"
               >
                 {item.label}
               </Link>
@@ -100,9 +99,9 @@ export function Header() {
               href={businessInfo.whatsappUrl}
               target="_blank"
               rel="noreferrer"
-              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-brand-champagne px-5 py-2.5 text-sm font-semibold text-brand-ebony"
+              className="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-brand-champagne px-5 py-3 text-sm font-semibold text-white shadow-soft"
             >
-              <MessageCircle size={15} />
+              <MessageCircle size={16} />
               Orçamento no WhatsApp
             </Link>
           </Container>
