@@ -1,14 +1,16 @@
 export const businessInfo = {
   name: "Assis Pianos",
+  tagline: "Tradição e excelência no cuidado do seu piano",
   city: "Fortaleza - CE",
   phoneDisplay: "(85) 9 9622-4425",
   phoneDigits: "5585996224425",
   email: "otpianos@yahoo.com.br",
   instagramHandle: "@assispianos",
   instagramUrl: "https://www.instagram.com/assispianos/",
+  whatsappUrl: "https://wa.me/5585996224425",
   address: "Av. Rui Barbosa, 780 - Meireles, Fortaleza - CE",
-  hoursWeek: "Seg a Sex 08h-20h",
-  hoursSaturday: "Sáb 08h-12h",
+  hoursWeek: "Seg a Sex 08h–20h",
+  hoursSaturday: "Sáb 08h–12h",
 };
 
 export const navItems = [
@@ -24,16 +26,16 @@ export const navItems = [
 
 export const heroHighlights = [
   {
-    title: "Atendimento Especializado",
-    description: "Venda, afinação, restauração e transporte com foco técnico e cuidado com o instrumento.",
+    title: "Atendimento Artesanal",
+    description: "Cada piano recebe atenção individual com diagnóstico preciso e execução cuidadosa.",
   },
   {
     title: "Tradição e Confiança",
-    description: "Serviço local em Fortaleza para residências, igrejas, escolas, espaços culturais e eventos.",
+    description: "Mais de 15 anos de experiência dedicados à arte de cuidar de pianos em Fortaleza.",
   },
   {
-    title: "Resposta Rápida",
-    description: "Orçamento facilitado por WhatsApp, telefone, Instagram ou e-mail.",
+    title: "Resposta Imediata",
+    description: "Orçamento rápido por WhatsApp, telefone ou Instagram. Sem burocracia.",
   },
 ];
 
@@ -49,33 +51,37 @@ export const services: ServiceItem[] = [
   {
     key: "sale",
     title: "Venda de Pianos",
-    description: "Consultoria para escolher o piano ideal para estudo, performance, igreja, escola ou residência.",
+    description:
+      "Consultoria personalizada para encontrar o piano perfeito — seja para estudo, performance, igreja, escola ou sua residência.",
   },
   {
     key: "restore",
-    title: "Restauração e Conserto",
-    description: "Recuperação estética e mecânica com ajustes técnicos para preservar toque, estrutura e sonoridade.",
+    title: "Restauração & Conserto",
+    description:
+      "Recuperação completa: estética, mecânica e sonora. Preservamos a alma do seu instrumento com técnica artesanal.",
   },
   {
     key: "tuning",
     title: "Afinação Profissional",
-    description: "Afinação precisa para estabilidade sonora, equilíbrio de registros e melhor resposta musical.",
+    description:
+      "Afinação precisa que garante estabilidade sonora, equilíbrio de registros e resposta musical impecável.",
   },
   {
     key: "transport",
     title: "Transporte Especializado",
-    description: "Movimentação segura com planejamento técnico para proteger o piano em todas as etapas.",
+    description:
+      "Movimentação segura com planejamento técnico completo. Seu piano protegido em cada etapa do deslocamento.",
   },
 ];
 
 export const stats = [
-  { value: "15+", label: "Anos de experiência" },
-  { value: "500+", label: "Pianos atendidos" },
-  { value: "100%", label: "Foco no cliente" },
+  { value: 15, suffix: "+", label: "Anos de experiência" },
+  { value: 500, suffix: "+", label: "Pianos atendidos" },
+  { value: 100, suffix: "%", label: "Foco no cliente" },
 ];
 
 export const aboutTopics = [
-  "Atuação em Fortaleza e Região Metropolitana com atendimento direto da equipe.",
+  "Atuação em Fortaleza e Região Metropolitana com atendimento direto e personalizado da equipe.",
   "Processo técnico pensado para preservar mecanismo, estrutura e musicalidade do piano.",
   "Suporte consultivo para decisões de compra, manutenção preventiva e recuperação completa.",
 ];
@@ -85,23 +91,23 @@ export const galleryItems = [
     type: "video" as const,
     label: "Reforma",
     title: "Processo de restauração em ação",
-    description: "Execução técnica com atenção ao acabamento, mecânica e estabilidade sonora.",
+    description: "Execução técnica com atenção meticulosa ao acabamento, mecânica e estabilidade sonora.",
     src: "/videos/reforma.mp4",
   },
   {
     type: "image" as const,
     label: "Locação",
     title: "Estrutura para eventos e apresentações",
-    description: "Soluções de locação com padrão visual e operacional para diferentes ambientes.",
+    description: "Soluções de locação com padrão visual e operacional premium para diferentes ambientes.",
     src: "/images/locacao.jpg",
     alt: "Piano preparado para locação em evento",
   },
 ];
 
 export const reasons = [
-  "Diagnóstico técnico antes da execução para definir o melhor serviço para cada instrumento.",
-  "Equipe local com atendimento próximo, agendamento ágil e acompanhamento transparente.",
-  "Cuidado profissional em cada detalhe para proteger valor, timbre e durabilidade do piano.",
+  "Diagnóstico técnico criterioso antes de qualquer execução — entendemos o instrumento antes de agir.",
+  "Equipe local em Fortaleza com atendimento próximo, agendamento ágil e acompanhamento transparente.",
+  "Cuidado artesanal em cada detalhe para proteger valor, timbre e durabilidade do seu piano.",
 ];
 
 export const processSteps = [
@@ -118,11 +124,11 @@ export const processSteps = [
   {
     number: "03",
     title: "Execução Especializada",
-    description: "O serviço é realizado com método, precisão mecânica e cuidado estrutural.",
+    description: "O serviço é realizado com método, precisão mecânica e cuidado estrutural artesanal.",
   },
   {
     number: "04",
-    title: "Entrega e Orientação",
+    title: "Entrega & Orientação",
     description: "Finalização com recomendações práticas para conservação e manutenção preventiva.",
   },
 ];
@@ -131,20 +137,31 @@ export const faqItems = [
   {
     question: "Vocês atendem apenas em Fortaleza?",
     answer:
-      "O foco principal é Fortaleza e Região Metropolitana. Para outras cidades, avaliamos logística e disponibilidade.",
+      "O foco principal é Fortaleza e Região Metropolitana. Para outras cidades, avaliamos logística e disponibilidade caso a caso.",
   },
   {
     question: "Como funciona o orçamento?",
     answer:
-      "O orçamento considera tipo de piano, estado atual e objetivo do serviço. Em alguns casos fazemos diagnóstico técnico prévio.",
+      "O orçamento considera tipo de piano, estado atual e objetivo do serviço. Em alguns casos, realizamos um diagnóstico técnico prévio para maior precisão.",
   },
   {
     question: "É possível agendar afinação periódica?",
-    answer: "Sim. A manutenção periódica ajuda a manter estabilidade sonora e prolonga a vida útil do instrumento.",
+    answer:
+      "Sim. Recomendamos afinação a cada 6 meses. A manutenção periódica mantém a estabilidade sonora e prolonga significativamente a vida útil do instrumento.",
   },
   {
     question: "Vocês também fazem transporte de piano?",
     answer:
-      "Sim. O transporte é planejado com cuidado técnico para garantir segurança durante todo o deslocamento.",
+      "Sim. O transporte é planejado com cuidado técnico especializado para garantir segurança total durante todo o deslocamento.",
+  },
+  {
+    question: "Quanto tempo leva uma restauração completa?",
+    answer:
+      "O prazo varia conforme o estado do instrumento e o escopo do serviço. Após o diagnóstico técnico, informamos uma estimativa precisa para cada caso.",
+  },
+  {
+    question: "Trabalham com pianos de cauda e verticais?",
+    answer:
+      "Sim. Atendemos todos os modelos — pianos de cauda, meia-cauda, verticais e armários — com o mesmo padrão de qualidade e atenção.",
   },
 ];

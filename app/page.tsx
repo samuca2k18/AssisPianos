@@ -8,12 +8,11 @@ import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { FaqSection } from "@/components/sections/FaqSection";
 import { ContactSection } from "@/components/sections/ContactSection";
-import { BusinessHoursSection } from "@/components/sections/BusinessHoursSection";
 import { FloatingWhatsApp } from "@/components/sections/FloatingWhatsApp";
 
 export default function HomePage() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen bg-brand-ebony">
       <Header />
       <main>
         <HeroSection />
@@ -24,7 +23,6 @@ export default function HomePage() {
         <ProcessSection />
         <FaqSection />
         <ContactSection />
-        <BusinessHoursSection />
       </main>
       <Footer />
       <FloatingWhatsApp />

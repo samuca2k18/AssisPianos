@@ -5,7 +5,9 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function ProcessSection() {
   return (
-    <section id="processo" className="py-16 sm:py-20">
+    <section id="processo" className="relative py-20 sm:py-28">
+      <div className="absolute left-0 right-0 top-0 gold-divider" />
+
       <Container>
         <Reveal>
           <SectionHeading
@@ -15,18 +17,28 @@ export function ProcessSection() {
           />
         </Reveal>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          {processSteps.map((step, index) => (
-            <Reveal key={step.number} delay={index * 0.06}>
-              <article className="h-full rounded-3xl border border-brand-parchment/15 bg-white/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-champagne/45">
-                <p className="inline-flex rounded-full border border-brand-champagne/50 bg-brand-champagne/10 px-3 py-1 text-xs font-semibold text-brand-champagne">
-                  {step.number}
-                </p>
-                <h3 className="mt-4 font-display text-2xl text-brand-parchment">{step.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-brand-parchment/72">{step.description}</p>
-              </article>
-            </Reveal>
-          ))}
+        <div className="relative mt-12">
+          {/* Connector Line (desktop) */}
+          <div className="absolute left-0 right-0 top-14 hidden h-px bg-gradient-to-r from-transparent via-brand-champagne/20 to-transparent xl:block" />
+
+          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+            {processSteps.map((step, index) => (
+              <Reveal key={step.number} delay={index * 0.08}>
+                <article className="group relative h-full rounded-3xl border border-brand-parchment/10 bg-white/[0.03] p-7 transition-all duration-500 hover:-translate-y-1 hover:border-brand-champagne/30 hover:bg-white/[0.06] hover:shadow-glow">
+                  {/* Step Number */}
+                  <div className="relative z-10 mb-5 inline-flex h-10 w-10 items-center justify-center rounded-full border border-brand-champagne/40 bg-brand-champagne/10">
+                    <span className="text-gold-gradient text-sm font-bold">{step.number}</span>
+                  </div>
+
+                  <h3 className="font-display text-xl text-brand-parchment">{step.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-brand-parchment/60">{step.description}</p>
+
+                  {/* Decorative line */}
+                  <div className="mt-5 h-px w-10 bg-gradient-to-r from-brand-champagne/40 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                </article>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </Container>
     </section>
