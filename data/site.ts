@@ -1,6 +1,7 @@
 export const businessInfo = {
   name: "Assis Pianos",
-  tagline: "Tradição e excelência no cuidado do seu piano",
+  tagline: "Desde 1984 — tradição, música e elegância",
+  foundedYear: 1984,
   city: "Fortaleza - CE",
   phoneDisplay: "(85) 9 9622-4425",
   phoneDigits: "5585996224425",
@@ -26,12 +27,12 @@ export const navItems = [
 
 export const heroHighlights = [
   {
-    title: "Atendimento Artesanal",
-    description: "Cada piano recebe atenção individual com diagnóstico preciso e execução cuidadosa.",
+    title: "Tradição desde 1984",
+    description: "Mais de 42 anos dedicados à arte de cuidar de pianos com excelência em Fortaleza.",
   },
   {
-    title: "Tradição e Confiança",
-    description: "Mais de 15 anos de experiência dedicados à arte de cuidar de pianos em Fortaleza.",
+    title: "Atendimento Artesanal",
+    description: "Cada piano recebe atenção individual com diagnóstico preciso e execução cuidadosa.",
   },
   {
     title: "Resposta Imediata",
@@ -58,7 +59,7 @@ export const services: ServiceItem[] = [
     key: "restore",
     title: "Restauração & Conserto",
     description:
-      "Recuperação completa: estética, mecânica e sonora. Preservamos a alma do seu instrumento com técnica artesanal.",
+      "Recuperação completa: estética, mecânica e sonora. Preservamos a alma do seu instrumento com técnica artesanal apurada ao longo de décadas.",
   },
   {
     key: "tuning",
@@ -75,15 +76,15 @@ export const services: ServiceItem[] = [
 ];
 
 export const stats = [
-  { value: 15, suffix: "+", label: "Anos de experiência" },
+  { value: 42, suffix: "+", label: "Anos de tradição" },
   { value: 500, suffix: "+", label: "Pianos atendidos" },
   { value: 100, suffix: "%", label: "Foco no cliente" },
 ];
 
 export const aboutTopics = [
-  "Atuação em Fortaleza e Região Metropolitana com atendimento direto e personalizado da equipe.",
-  "Processo técnico pensado para preservar mecanismo, estrutura e musicalidade do piano.",
-  "Suporte consultivo para decisões de compra, manutenção preventiva e recuperação completa.",
+  "Desde 1984, atuamos em Fortaleza e Região Metropolitana com atendimento direto e personalizado.",
+  "Quatro décadas de processo técnico pensado para preservar mecanismo, estrutura e musicalidade.",
+  "Suporte consultivo completo para decisões de compra, manutenção preventiva e recuperação.",
 ];
 
 export const galleryItems = [
@@ -105,9 +106,9 @@ export const galleryItems = [
 ];
 
 export const reasons = [
-  "Diagnóstico técnico criterioso antes de qualquer execução — entendemos o instrumento antes de agir.",
+  "Diagnóstico técnico criterioso antes de qualquer execução — mais de 42 anos de experiência em cada avaliação.",
   "Equipe local em Fortaleza com atendimento próximo, agendamento ágil e acompanhamento transparente.",
-  "Cuidado artesanal em cada detalhe para proteger valor, timbre e durabilidade do seu piano.",
+  "Tradição familiar desde 1984 — cuidado artesanal em cada detalhe para proteger valor, timbre e durabilidade.",
 ];
 
 export const processSteps = [
@@ -162,6 +163,6 @@ export const faqItems = [
   {
     question: "Trabalham com pianos de cauda e verticais?",
     answer:
-      "Sim. Atendemos todos os modelos — pianos de cauda, meia-cauda, verticais e armários — com o mesmo padrão de qualidade e atenção.",
+      "Sim. Atendemos todos os modelos — pianos de cauda, meia-cauda, verticais e armários — com o mesmo padrão de qualidade e atenção cultivado desde 1984.",
   },
 ];
